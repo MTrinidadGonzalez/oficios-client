@@ -19,8 +19,8 @@ const UpdateProfileImg = () => {
             const response = await userService.updateImgProfile(formData);
             const result = response.data;
             if (result.status === 'success') {
-                //navigate('/profile')
-                window.location.reload();
+                navigate('/profile')
+               // window.location.reload();
             } else if (result.status === 'error') {
                 console.log(result);                
             }
