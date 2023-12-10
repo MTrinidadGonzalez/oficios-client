@@ -16,7 +16,8 @@ import UserTradesProfile from './components/UserTreadesProfile/UserTreadesProfil
 import UpdateUserForm from './components/UpdateUserForm/UpdateUserForm';
 import GetLocation from './components/GetLocation/GetLocation';
 
-const socket = io('http://localhost:8081');
+//const socket = io('http://localhost:8081');
+const socket = io('https://oficios-server.onrender.com/')
 
 function App() {
   return (

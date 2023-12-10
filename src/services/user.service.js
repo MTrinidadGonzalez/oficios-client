@@ -4,7 +4,7 @@ import {getJsonHeaders, getFormDataHeaders} from '../utils/http'
 export default class UserService{
     constructor(){
         this.client= new AxiosClient()
-        this.baseURL= `http://localhost:8081/api/users`
+        this.baseURL= `https://oficios-server.onrender.com/api/users`
     }
 
     getUsers=()=>{
