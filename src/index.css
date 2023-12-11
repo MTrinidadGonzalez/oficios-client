@@ -58,6 +58,8 @@ input{
   text-decoration: none;
   height: 40px;
   font-size: 20px;
+  border: 1px solid  rgb(231,193,106);
+  border-radius: 3px;
 
 }
 .link-search-users:hover{
@@ -86,6 +88,13 @@ input{
 
  /*RESPONSIVE HASTA TABLET*/
 @media (max-width:1024px) {
+  body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+  }
 
   /*inicio*/
 .container-background-img{
@@ -213,11 +222,12 @@ text-align: center;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 90%;
   height: 30px;
   font-size: 30px;
   padding: 5px;
   border-radius: 3px;
+  color: rgb(231,193,106);
 }
 .slider-container-users-cards {
   max-width: 700px;
