@@ -7,6 +7,14 @@ export default class UserService{
         this.baseURL= `https://oficios-server.onrender.com/api/users`
     }
 
+    getImgProfiles=(imgUrl)=>{
+        const requestInfo={
+            url:imgUrl,
+            config:getJsonHeaders() 
+        }
+        return this.client.makeGetRequest(requestInfo)
+    }
+
     getUsers=()=>{
         const requestInfo={
             url:`${this.baseURL}`,
