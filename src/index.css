@@ -3,6 +3,8 @@ html, body {
   margin: 0;
   padding: 0;
   height: 100%;
+  overflow-x: hidden;
+  width: 100%;
 }
 
 body {
@@ -19,7 +21,9 @@ background-repeat: no-repeat;
   flex-direction: column;
 }
 
-
+.comment-item{
+  color: rgb(8,140,161);
+}
 input{
   border-bottom: 1px solid black;
   border-top: none;
@@ -262,9 +266,10 @@ text-align: center;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 30px;
-  font-size: 30px;
+  width: 90%;
+  margin: auto;
+  /*height: 30px;
+  font-size: 30px;*/
   padding: 5px;
   border-radius: 3px;
   background-image: linear-gradient( rgb(8,140,161),rgb(242,199,4));
@@ -281,6 +286,7 @@ text-align: center;
   justify-content: center;
   padding: 20px;
   margin: auto;
+  overflow-x: hidden;
 }
 .slider-cards{
   width: 100%;
@@ -705,10 +711,11 @@ width: 100%;
 margin: 10px;
 padding: 10px;
 border-radius: 6px;
-
+border: 1px solid rgb(8,140,161);
 }
 .slider-cards *{
   width: 90%;
+  text-align: center;
 }
 .slider-card-container-img{
   width: 100%;
@@ -924,10 +931,10 @@ background-color: transparent;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 3px;
+  padding: 5px;
   text-decoration: none;
-  font-weight: bolder;
-  height: 40px;
+  /*font-weight: bolder;*/
+  height: 42px;
   text-transform: uppercase;
   margin:5px auto 5px auto;
   transition: 1s;
@@ -945,10 +952,10 @@ background-color: transparent;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 5px;
+    padding: 6px;
     text-decoration: none;
-    font-weight: bolder;
-    height: 40px;
+    /*font-weight: bolder;*/
+    height: 42px;
     margin:5px auto 5px auto;
     width: 90%;
     text-transform: uppercase;
