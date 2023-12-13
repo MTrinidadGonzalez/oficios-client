@@ -62,7 +62,8 @@ input{
   text-decoration: none;
   height: 40px;
   color: white;
-  background-color: rgb(242,199,4);
+ /* background-color: rgb(242,199,4);*/
+ background-color: rgb(237,28,7);
   border-radius: 40px;
   border: 1px solid   rgb(8,140,161);
   font-size: larger;
@@ -941,7 +942,8 @@ background-color: transparent;
   width: 90%;
   background-color: rgb(8,178,170);
   color: white; 
-  border-radius: 40px;
+border-radius: 6px;
+ /* border-radius: 40px;*/
   border: 1px solid rgb(8,140,161);
   }
   
@@ -963,7 +965,8 @@ background-color: transparent;
     background-color: rgb(8,178,170);
     color: white;
     border: 1px solid rgb(8,140,161);
-    border-radius: 40px;
+    border-radius: 6px;
+ /* border-radius: 40px;*/;
   }
   
   .btns:hover{
