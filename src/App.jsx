@@ -29,7 +29,7 @@ function App() {
               <Route path='/register' element={<Register />} />
               <Route path='/login' element={<Login />} />
               <Route path='/home' element={<Home />} />
-              <Route path='/profile' element={<UserProfile />} />
+              <Route path='/profile' element={<UserProfile socket={socket} />} />
               <Route path='/' element={<Inicio />} />
               <Route path='/users' element={<UsersTrades socket={socket} />} />
               <Route path='/chat/:chatId' element={<ChatContent socket={socket} />} />

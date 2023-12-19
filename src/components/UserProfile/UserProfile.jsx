@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react'
 import NavBar from '../NavBar/NavBar'
 
 
-const UserProfile = () => {
+const UserProfile = ({ socket }) => {
     const [user, setUser] = useState({})
 
     useEffect(() => {
@@ -34,6 +34,20 @@ const UserProfile = () => {
         }
         getUser()
     }, [])
+
+    socket.on('getRealTimeUserProfile',(data) => {
+        const userData = {
+            id: data._id,
+            alias: data.alias,
+            first_name: data.first_name,
+            last_name: data.last_name,
+            email: data.email,
+            img: data.imgProfile,
+            role: data.role,
+            zona: data.zona
+        }
+        setUser({ ...userData })
+      });
 
     return ( <>
     <NavBar/>

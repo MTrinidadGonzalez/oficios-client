@@ -34,7 +34,7 @@ const UpdateProfileImg = () => {
             <div>
                 <form encType="multipart/form-data" onSubmit={handleSubmit(onSubmit)}>
                     <input type="file" required={true} {...register("imgProfile")} />
-                    <input type="submit" value="Reemplazar imagen" />
+                    <input type="submit" value="Reemplazar imagen" className='btns'/>
                 </form>
             </div>
         </>
