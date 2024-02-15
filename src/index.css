@@ -238,6 +238,7 @@ input{
   align-items: center;
   width: 100%;
   padding: 20px;
+  background-color: white;
 }
 
 .inicio-title{
@@ -358,6 +359,8 @@ input{
   justify-content: center;
   margin: auto;
   width: 90%;
+  background-color: white;
+  border-radius: 6px;
 }
 .container-forms form{
   display: flex;
